@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" 
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" 
+    crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,700;1,400;1,700&display=swap" 
+    rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>JobsNET .: Encotre sua vaga</title>
+</head>
+<body>
+    <header>
+        <div>
+            <div id="logo">
+                <a src="index.html">JobsNET</a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="https://www.google.com.br">anunciar vaga</a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://www.google.com.br">pesquisar vaga</a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.google.com.br">sobre nós</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="socialmedia">
+                <ul>
+                    <li>
+                        <a id="LinkedIn" target="_blank" href="https://www.google.com.br"> <i class="fab fa-linkedin-in"></i></a>
+                    </li>
+                    
+                    <li>
+                        <a id="Intagram" target="_blank" href="https://www.google.com.br"> <i class="fab fa-instagram"></i></a>
+                    </li>
+    
+                    <li>
+                        <a id="Facebook" target="_blank" href="https://www.google.com.br"><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                 </ul>
+            </div>
+            <div id="button">
+                <button>LOGIN</button>
+            </div>
+        </div>       
+    </header>
+    <main>
+        <section class="container">
+            <div class="slogan">
+                <h1>Encontre sua vaga num clique</h1>
+            </div>
+
+            <div onclick="displayRegistration()" id="search">
+                <i id="animation" class="fas fa-search"></i>
+            </div>
+
+            <div style="display: none;" id="registration">
+                <form id="cadastro" action="/pagina-processa-dados-do-form" method="post" >
+                    <div>
+                        <h4>Informações Pessoais</h4>
+                    </div>
+                    <div class=linha1>
+                        <div>
+                            <p><label for="nome">Nome Completo</label></p>
+                            <input id="nome" type="text"/>
+                        </div>
+        
+                        <div>
+                            <p><label for="cargo">Cargo Pretendido</label></p>
+                            <input type="text" id="cargo" />
+                        </div>
+
+                    </div>
+                    
+                    <div class=linha2>
+                        <div>
+                            <p><label for="nascimento">Nascimento</label></p>
+                            <input type="date" id="nascimento" />
+                        </div>
+    
+                        <div>
+                            <p><label for="estadocivil">Estado Civil</label></p>
+                            <input type="text" id="estadocivil" />
+                        </div>
+    
+
+                        <div class="section">
+                                <div class="control-group">
+                                  <label class="control-label">Selecione algo</label>
+                                  <select class="control">
+                                        <option enabled>Agênero</option>
+                                        <option enabled>Não-binário</option>
+                                        <option enabled>Transgênero</option>
+                                        <option enabled>Feminino Cis</option>
+                                        <option enabled>Masculino Cis</option>
+                                        <option enabled>Outro</option>
+                                        <option enabled>Não quero responder</option>
+                                  </select>
+                                </div>
+                        </div>
+    
+                    </div>
+
+                    <div>
+                        <h4>Informações de Contato</h4>
+                    </div>
+
+                    <div class="linha3">
+                        <div>
+                            <p><label for="tel1">Telefone Principal</label></p>
+                            <input id="tel1" type="tel" />
+                        </div>
+    
+                        <div>
+                            <p><label for="tel2">Telefone 2</label></p>
+                            <input id="tel2" type="text" />
+                        </div>
+                    </div>
+ 
+                    <div>
+                        <h4>Endereço</h4>
+                    </div>
+
+                    <div>
+                        <p><label for="cep">CEP</label></p>
+                        <input id="cep" type="text"/>
+                        <button><i id="pesquisacep" class="fas fa-search"></i></button>Não sei meu CEP
+                    </div>
+
+                    <div class="linha4">
+                        <div>
+                            <p><label for="logradouro">Logradouro</label></p>
+                            <input id="logradouro" type="text"/>
+                        </div>
+    
+                        <div>
+                            <p><label for="numero">Número</label></p>
+                            <input id="numero" type="text"/>
+                        </div>
+                        
+                        <div>
+                            <p><label for="complemento">Complemento</label></p>
+                            <input id="complemento" type="text"/>
+                        </div>    
+                    </div>
+
+                    <div class="linha5">
+                        <div>
+                            <p><label for="bairro">Bairro</label></p>
+                            <input id="bairro" type="text"/>
+                        </div>
+                        
+                        <div>
+                            <p><label for="cidade">Cidade</label></p>
+                            <input id="cidade" type="text"/>
+                        </div>
+                        
+                        <div>
+                            <p><label for="estado">Estado</label></p>
+                            <input id="estado" type="text"/>
+                        </div>
+    
+                    </div>
+
+                    <div>
+                        <h4>Documentos</h4>
+                    </div>
+
+                    <div class="linha6">
+                        <div>
+                            <p><label for="id">Identidade</label></p>
+                            <input id="id" type="text"/>
+                        </div>
+    
+                        <div>
+                            <p><label for="cpf">CPF</label></p>
+                            <input id="cpf" type="text"/>
+                        </div>
+                        
+                        <div>
+                            <p><label for="habilitacao">Habilitação</label></p>
+                            <input list="habilitacao"/>
+                            <datalist id="categoria">
+                            <option value="A">
+                            <option value="B">
+                            <option value="C">
+                            <option value="D">
+                            <option value="A e B">
+                            </datalist>
+                        </div>
+    
+                    </div>
+
+                    <div>
+                        Possui Veículo <label for="veiculo"></label>
+                        <input id="veiculosim" type="checkbox"/> SIM
+                        <input id="veiculonao" type="checkbox"/> NÃO
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </form>
+            </div>
+        </section>
+    </main>
+    
+    <script>
+        function displayRegistration() {
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate')
+            var display = document.getElementById('registration');
+            display.classList.toggle('active')
+        }
+    </script>
+
+</body>
+</html>
